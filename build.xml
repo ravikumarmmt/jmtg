@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="mtg" default="build">
-    <target name="build" depends="prepare,lint,phploc-ci,pdepend,phpmd-ci,phpcs-ci,phpcpd-ci,phpunit,phpdox,-check-failure"/>
+    <target name="build" depends="prepare,lint,phploc-ci,pdepend,phpmd-ci,phpcs-ci,phpcpd-ci,phpunit,phpdox"/>
 
     <target name="clean" unless="clean.done" description="Cleanup build artifacts">
         <delete dir="${basedir}/build/api"/>
@@ -60,6 +60,7 @@
         </exec>
     </target>
 
+	
     <target name="phploc-ci" depends="prepare"
             description="Measure project size using PHPLOC and log result in CSV and XML format">
         <exec executable="${basedir}/build/tools/phploc.phar" taskname="phploc">
