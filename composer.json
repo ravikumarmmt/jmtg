@@ -17,12 +17,13 @@
         "fzaninotto/faker": "~1.4",
         "phpunit/phpunit": "~5.0",
         "mockery/mockery": "~0.9",
-	"squizlabs/php_codesniffer": "*",
-	"phpmd/phpmd": "*",
-	"sebastian/phpcpd": "*",
-	"pdepend/pdepend": "*",
-	"phploc/phploc": "*",
-	"theseer/phpdox": "*"
+		"squizlabs/php_codesniffer": "*",
+		"phpmd/phpmd": "*",
+		"sebastian/phpcpd": "*",
+		"pdepend/pdepend": "*",
+		"phploc/phploc": "*",
+		"theseer/phpdox": "*",
+		"phing/phing": "*"		
     },
     "autoload": {
         "psr-4": {
